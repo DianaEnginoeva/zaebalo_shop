@@ -25,7 +25,7 @@ SECRET_KEY = '5#mstaqgl_=-(ko(8cdeyo-h53uil*_18)k_+!yz%kfe7wx%y4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '<твоё_имя_пользователя>.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'dianaenginoeva.pythonanywhere.com']
 
 
 # Application definition
