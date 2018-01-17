@@ -1,17 +1,10 @@
-<html>
-    <head>
-        <title>Zaebalo shop</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Zaebalo shop</a></h1>
-        </div>
+{% extends 'internet_shop/base.html' %}
+{% block content %} 
         {% for product in products %}
-            <div>
-                <h3>{{ product.name }}</h3>
+            <div class="product">
+                <h1><a href="{% url 'product_detail' pk=product.pk %}">{{ product.name }}</a></h1>
                 <p>{{ product.describe }}</p>
                 <p>{{ product.price|linebreaksbr }}</p>
             </div>
         {% endfor %}
-    </body>
-</html>
+{% endblock %}
