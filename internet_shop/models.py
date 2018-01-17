@@ -7,7 +7,7 @@ class Product(models.Model):
     number_available = models.TextField()
     price = models.TextField()
     number_in_cart = models.TextField()
-    cost = models.BooleanField()
+    cost = models.TextField()
     
     def add_to_cart(self):
         self.save()
